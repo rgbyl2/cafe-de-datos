@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Cafe De Datos",
+  "schemaVersion": 1,
+  "description": "Café de Datos — página diaria de noticias de ciencia de datos con estética de cafetería moderna. Resúmenes en español con enlace a la fuente original. Se actualiza cada día a las 7:00."
+}
+</script>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -81,51 +88,51 @@
   <header>
     <span class="cup" aria-hidden="true">☕</span>
     <h1>Café <em>de</em> Datos</h1>
-    <p class="meta">Noticias de ciencia de datos · Miércoles, 1 de julio de 2026 · Recién hecho cada día a las 7:00</p>
+    <p class="meta">Noticias de ciencia de datos · Jueves, 2 de julio de 2026 · Recién hecho cada día a las 7:00</p>
   </header>
 
   <div class="menu-sep">El menú de hoy</div>
 
   <article class="card">
-    <span class="tag tag-plataformas">Plataformas</span>
-    <h2>Databricks presenta Lakehouse//RT: warehouse en tiempo real sobre Delta e Iceberg</h2>
-    <p>En su Data + AI Summit, Databricks anunció en beta un almacén de datos en tiempo real con latencias por debajo de 100 ms y 12.000 consultas por segundo directamente sobre tablas abiertas, sin copias intermedias. Junto a él, LTAP: transaccional y analítico leyendo la misma copia del dato.</p>
-    <a href="https://qubika.com/blog/everything-databricks-announced-dais-data-ai-summit-2026/" target="_blank">Fuente original (EN) →</a>
+    <span class="tag tag-herramientas">Herramientas</span>
+    <h2>Snowflake extiende Cortex Code CLI a dbt y Airflow</h2>
+    <p>El agente de codificación por terminal de Snowflake llega ahora a dbt y Apache Airflow, ofreciendo asistencia de IA con contexto seguro dentro de los sistemas de ingeniería de datos preferidos del equipo. La idea: construir, gestionar y optimizar pipelines de producción sin salir del entorno de trabajo.</p>
+    <a href="https://www.infoworld.com/article/4136429/snowflake-extends-cortex-code-cli-to-dbt-and-airflow-to-streamline-data-engineering-workflows.html" target="_blank">Fuente original (EN) →</a>
   </article>
 
   <article class="card">
     <span class="tag tag-ingenieria">Ingeniería</span>
-    <h2>Lakeflow Designer ya es GA: pipelines en lenguaje natural para no ingenieros</h2>
-    <p>El constructor visual de pipelines de Databricks, con arrastrar-soltar y lenguaje natural, llega a disponibilidad general, y Lakeflow Connect supera los 100 conectores integrados. La ingeniería de datos se abre a perfiles analíticos sin código.</p>
-    <a href="https://qubika.com/blog/everything-databricks-announced-dais-data-ai-summit-2026/" target="_blank">Fuente original (EN) →</a>
-  </article>
-
-  <article class="card">
-    <span class="tag tag-herramientas">Herramientas</span>
-    <h2>Snowflake integra IA en los pipelines y dbt Fusion llega a GA</h2>
-    <p>Tras su Summit 2026, Snowflake incorpora "smart pipelines" con IA en el flujo de construcción de datos y hace generalmente disponible dbt Fusion dentro de dbt Projects, con compilaciones mucho más rápidas en proyectos complejos. Su asistente Cortex Code ya supera las 7.100 cuentas: el producto de crecimiento más rápido de su historia.</p>
+    <h2>Snowflake acelera Dynamic Tables hasta 2,8x en su refresco declarativo</h2>
+    <p>Tras el Summit 2026, Snowflake hace generalmente disponible un refresco de Dynamic Tables hasta 2,8 veces más rápido, junto con nuevas capacidades para que los flujos declarativos sean más performantes, interoperables y expresivos. Menos esperas y más rendimiento en las cargas de datos.</p>
     <a href="https://www.snowflake.com/en/blog/ai-smart-pipelines-whats-new/" target="_blank">Fuente original (EN) →</a>
   </article>
 
   <article class="card">
+    <span class="tag tag-plataformas">Plataformas</span>
+    <h2>Databricks Model Serving ya soporta Claude Sonnet 5 como modelo alojado</h2>
+    <p>El nuevo Sonnet 5 de Anthropic entra en Model Serving como modelo hospedado por Databricks, pensado para código, flujos agénticos y trabajo profesional a escala. Ofrece inteligencia cercana a Opus con la eficiencia de coste y velocidad propias de Sonnet, dentro de la plataforma.</p>
+    <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june" target="_blank">Fuente original (EN) →</a>
+  </article>
+
+  <article class="card">
     <span class="tag tag-investigacion">Investigación</span>
-    <h2>Anthropic lanza Claude Science, un banco de trabajo para científicos</h2>
-    <p>Nueva app en beta que unifica herramientas científicas fragmentadas en un solo entorno: renderiza estructuras de proteínas en 3D, pistas de navegador genómico y estructuras químicas de forma nativa. Disponible para usuarios Pro, Max, Team y Enterprise en macOS y Linux.</p>
-    <a href="https://hipther.com/latest-news/2026/07/01/114418/ai-dispatch-daily-trends-and-innovations-july-1-2026-anthropic-claude-science-aws-forward-deployed-engineers-california-ai-workforce-study-kenshiki-labs-pulse-ant-international-gdc/" target="_blank">Fuente original (EN) →</a>
+    <h2>BoltzGen llega a Amazon SageMaker AI para diseño de proteínas</h2>
+    <p>AWS publica una guía para desplegar BoltzGen —un modelo generativo por difusión que diseña proteínas y péptidos capaces de unirse a dianas biomoleculares concretas— en SageMaker AI. La plataforma gestiona el ciclo de cómputo GPU de extremo a extremo, de la validación rápida al procesamiento por lotes en producción.</p>
+    <a href="https://aws.amazon.com/blogs/machine-learning/accelerate-protein-design-with-boltzgen-on-amazon-sagemaker-ai/" target="_blank">Fuente original (EN) →</a>
+  </article>
+
+  <article class="card">
+    <span class="tag tag-herramientas">Herramientas</span>
+    <h2>pandas retira la 3.0.4 por fallos de segmentación en funciones de fecha</h2>
+    <p>La versión 3.0.4, publicada el 28 de junio, fue retirada (yanked) por segfaults en funcionalidad de datetime; la 3.0.3 sigue como referencia estable de la serie. Un recordatorio de la envergadura del salto a pandas 3.0, con copy-on-write obligatorio y backend PyArrow para strings.</p>
+    <a href="https://github.com/pandas-dev/pandas/releases" target="_blank">Fuente original (EN) →</a>
   </article>
 
   <article class="card">
     <span class="tag tag-mercado">Mercado</span>
-    <h2>Genie pasa a pago por uso: el precio de preguntar a tus datos</h2>
-    <p>Desde el 6 de julio, los productos Genie de Databricks se facturan por consumo, con 150 DBUs gratis al mes por usuario (unos 10,50 $). Señal del sector: la analítica conversacional deja de ser demo y empieza a facturarse como cualquier otra carga de trabajo.</p>
-    <a href="https://medium.com/next-token/data-ai-summit-2026-what-databricks-actually-announced-80e6448e9e4f" target="_blank">Fuente original (EN) →</a>
-  </article>
-
-  <article class="card">
-    <span class="tag tag-ingenieria">Ingeniería</span>
-    <h2>OpenSharing: compartir modelos y agentes como se comparten datos</h2>
-    <p>Delta Sharing evoluciona a OpenSharing, ahora proyecto de la Linux Foundation: el protocolo abierto se extiende para cubrir activos de IA — skills de agentes, modelos y Genie Agents — además de datos estructurados. Interoperabilidad total con cualquier motor que hable Iceberg: Spark, Trino, Flink, Snowflake, DuckDB o pandas.</p>
-    <a href="https://qubika.com/blog/everything-databricks-announced-dais-data-ai-summit-2026/" target="_blank">Fuente original (EN) →</a>
+    <h2>Informe del mercado laboral de datos 2026: menos vacantes junior, más exigencia</h2>
+    <p>Un análisis de inicio de año sobre el empleo en IA y ciencia de datos señala una recomposición del mercado: caen las posiciones de entrada más genéricas mientras crece la demanda de perfiles que combinan analítica, ingeniería y despliegue de modelos en producción.</p>
+    <a href="https://medium.com/data-science-collective/ai-and-data-scientist-job-market-in-2026-analysis-trends-opportunities-early-year-report-1641d1f8a30d" target="_blank">Fuente original (EN) →</a>
   </article>
 
   <footer>Recién molido cada mañana a las 7:00 · Servido con enlace a la fuente original</footer>
