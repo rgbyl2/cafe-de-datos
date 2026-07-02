@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café de Datos — Noticias de ciencia de datos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+    background: #faf6ef;
+    color: #2a201a;
+    line-height: 1.6;
+    padding: 36px 16px 56px;
+  }
+  .serif { font-family: "Fraunces", Georgia, serif; }
+  .container { max-width: 720px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 12px; }
+  .cup { font-size: 1.6rem; display: block; margin-bottom: 6px; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 2.3rem; font-weight: 700; letter-spacing: -0.02em;
+  }
+  h1 em { font-style: italic; color: #a8622a; }
+  .meta { color: #7d6f60; font-size: 0.88rem; margin-top: 8px; }
+  .menu-sep {
+    display: flex; align-items: center; gap: 14px;
+    margin: 26px 0 22px; color: #a8622a;
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  .menu-sep::before, .menu-sep::after {
+    content: ""; flex: 1; border-top: 1px dashed #d8c9b2;
+  }
+  .card {
+    background: #fffdf9;
+    border: 1px solid #eadfcd;
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 10px rgba(90, 65, 40, 0.05);
+  }
+  .tag {
+    display: inline-block;
+    font-size: 0.7rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    padding: 4px 11px;
+    border: 1px dashed #b99b74;
+    border-radius: 20px;
+    margin-bottom: 11px;
+    color: #7a5028; background: #f7efe2;
+  }
+  .tag-plataformas { background: #f3e8d8; color: #7a5028; }
+  .tag-ingenieria { background: #e9efe3; color: #4e6b3c; border-color: #9db284; }
+  .tag-herramientas { background: #f0e6ee; color: #6b4462; border-color: #b48aa8; }
+  .tag-mercado { background: #e7ecf1; color: #3d5a75; border-color: #8aa5bd; }
+  .tag-investigacion { background: #f7e8e2; color: #8a4b34; border-color: #c58f77; }
+  .card h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.22rem; font-weight: 600; margin-bottom: 8px;
+    letter-spacing: -0.01em; line-height: 1.35;
+  }
+  .card p { color: #4d4238; font-size: 0.93rem; margin-bottom: 11px; }
+  .card a {
+    color: #a8622a; font-size: 0.86rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .card a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 34px; color: #9a8b78; font-size: 0.82rem;
+    text-align: center; font-style: italic;
+    font-family: "Fraunces", Georgia, serif;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="cup" aria-hidden="true">☕</span>
+    <h1>Café <em>de</em> Datos</h1>
+    <p class="meta">Noticias de ciencia de datos · Miércoles, 1 de julio de 2026 · Recién hecho cada día a las 7:00</p>
+  </header>
+
+  <div class="menu-sep">El menú de hoy</div>
+
+  <article class="card">
+    <span class="tag tag-plataformas">Plataformas</span>
+    <h2>Databricks presenta Lakehouse//RT: warehouse en tiempo real sobre Delta e Iceberg</h2>
+    <p>En su Data + AI Summit, Databricks anunció en beta un almacén de datos en tiempo real con latencias por debajo de 100 ms y 12.000 consultas por segundo directamente sobre tablas abiertas, sin copias intermedias. Junto a él, LTAP: transaccional y analítico leyendo la misma copia del dato.</p>
+    <a href="https://qubika.com/blog/everything-databricks-announced-dais-data-ai-summit-2026/" target="_blank">Fuente original (EN) →</a>
+  </article>
+
+  <article class="card">
+    <span class="tag tag-ingenieria">Ingeniería</span>
+    <h2>Lakeflow Designer ya es GA: pipelines en lenguaje natural para no ingenieros</h2>
+    <p>El constructor visual de pipelines de Databricks, con arrastrar-soltar y lenguaje natural, llega a disponibilidad general, y Lakeflow Connect supera los 100 conectores integrados. La ingeniería de datos se abre a perfiles analíticos sin código.</p>
+    <a href="https://qubika.com/blog/everything-databricks-announced-dais-data-ai-summit-2026/" target="_blank">Fuente original (EN) →</a>
+  </article>
+
+  <article class="card">
+    <span class="tag tag-herramientas">Herramientas</span>
+    <h2>Snowflake integra IA en los pipelines y dbt Fusion llega a GA</h2>
+    <p>Tras su Summit 2026, Snowflake incorpora "smart pipelines" con IA en el flujo de construcción de datos y hace generalmente disponible dbt Fusion dentro de dbt Projects, con compilaciones mucho más rápidas en proyectos complejos. Su asistente Cortex Code ya supera las 7.100 cuentas: el producto de crecimiento más rápido de su historia.</p>
+    <a href="https://www.snowflake.com/en/blog/ai-smart-pipelines-whats-new/" target="_blank">Fuente original (EN) →</a>
+  </article>
+
+  <article class="card">
+    <span class="tag tag-investigacion">Investigación</span>
+    <h2>Anthropic lanza Claude Science, un banco de trabajo para científicos</h2>
+    <p>Nueva app en beta que unifica herramientas científicas fragmentadas en un solo entorno: renderiza estructuras de proteínas en 3D, pistas de navegador genómico y estructuras químicas de forma nativa. Disponible para usuarios Pro, Max, Team y Enterprise en macOS y Linux.</p>
+    <a href="https://hipther.com/latest-news/2026/07/01/114418/ai-dispatch-daily-trends-and-innovations-july-1-2026-anthropic-claude-science-aws-forward-deployed-engineers-california-ai-workforce-study-kenshiki-labs-pulse-ant-international-gdc/" target="_blank">Fuente original (EN) →</a>
+  </article>
+
+  <article class="card">
+    <span class="tag tag-mercado">Mercado</span>
+    <h2>Genie pasa a pago por uso: el precio de preguntar a tus datos</h2>
+    <p>Desde el 6 de julio, los productos Genie de Databricks se facturan por consumo, con 150 DBUs gratis al mes por usuario (unos 10,50 $). Señal del sector: la analítica conversacional deja de ser demo y empieza a facturarse como cualquier otra carga de trabajo.</p>
+    <a href="https://medium.com/next-token/data-ai-summit-2026-what-databricks-actually-announced-80e6448e9e4f" target="_blank">Fuente original (EN) →</a>
+  </article>
+
+  <article class="card">
+    <span class="tag tag-ingenieria">Ingeniería</span>
+    <h2>OpenSharing: compartir modelos y agentes como se comparten datos</h2>
+    <p>Delta Sharing evoluciona a OpenSharing, ahora proyecto de la Linux Foundation: el protocolo abierto se extiende para cubrir activos de IA — skills de agentes, modelos y Genie Agents — además de datos estructurados. Interoperabilidad total con cualquier motor que hable Iceberg: Spark, Trino, Flink, Snowflake, DuckDB o pandas.</p>
+    <a href="https://qubika.com/blog/everything-databricks-announced-dais-data-ai-summit-2026/" target="_blank">Fuente original (EN) →</a>
+  </article>
+
+  <footer>Recién molido cada mañana a las 7:00 · Servido con enlace a la fuente original</footer>
+</div>
+</body>
+</html>
